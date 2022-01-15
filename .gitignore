@@ -1,0 +1,7 @@
+# Project exclude paths
+/05_web/target/
+/08_JSP/target/
+/09_EL_JSTL/target/
+/13_COOKIE_SESSION/target/
+/book/target/
+/out/

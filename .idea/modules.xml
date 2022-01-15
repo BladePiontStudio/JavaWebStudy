@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/05_web/05_web.iml" filepath="$PROJECT_DIR$/05_web/05_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_JSP/08_JSP.iml" filepath="$PROJECT_DIR$/08_JSP/08_JSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_EL_JSTL/09_EL_JSTL.iml" filepath="$PROJECT_DIR$/09_EL_JSTL/09_EL_JSTL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/13_COOKIE_SESSION/13_COOKIE_SESSION.iml" filepath="$PROJECT_DIR$/13_COOKIE_SESSION/13_COOKIE_SESSION.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book/book.iml" filepath="$PROJECT_DIR$/book/book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaWeb.iml" filepath="$PROJECT_DIR$/javaWeb.iml" />
+    </modules>
+  </component>
+</project>

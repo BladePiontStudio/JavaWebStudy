@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--context param 上下文参数，属于整个web工程 -->
+    <context-param>
+        <param-username>username</param-username>
+        <param-value>root</param-value>
+    </context-param>
+
+    <!--Servlet标签给tomcat配置Servlet程序-->
+    <servlet>
+        <!--ServletName标签 给Servlet程序起一个别名（一般是类名）-->
+        <servlet-username>HelloServlet</servlet-username>
+        <!--ServletClass标签 是Servlet类的全名-->
+        <servlet-class>com.aiguitu.servlet.HelloServlet</servlet-class>
+        <!--Servlet程序初始化参数-->
+        <init-param>
+            <param-username>username</param-username>
+            <param-value>root</param-value>
+        </init-param>
+        <init-param>
+            <param-username>password</param-username>
+            <param-value>""</param-value>
+        </init-param>
+        <init-param>
+            <param-username>url</param-username>
+            <param-value>localhost</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-username>Hello2Servlet</servlet-username>
+        <servlet-class>com.aiguitu.servlet.Hello2Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-username>ResponseServlet</servlet-username>
+        <servlet-class>com.aiguitu.servlet.ResponseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-username>ForwardServlet</servlet-username>
+        <servlet-class>com.aiguitu.servlet.ForwardServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-username>Forword2Servlet</servlet-username>
+        <servlet-class>com.aiguitu.servlet.Forword2Servlet</servlet-class>
+    </servlet>
+    <!--ServletMapping标签给Servlet程序配置访问地址-->
+    <servlet-mapping>
+        <!--ServletName标签 告诉服务器当前配置的地址给哪个服务器使用-->
+        <servlet-username>HelloServlet</servlet-username>
+        <!--UrlPattern标签 对应浏览器的访问地址-->
+        <url-pattern>/myHello</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-username>Hello2Servlet</servlet-username>
+        <url-pattern>/myHello2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-username>ResponseServlet</servlet-username>
+        <url-pattern>/response</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-username>ForwardServlet</servlet-username>
+        <url-pattern>/forward</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-username>Forword2Servlet</servlet-username>
+        <url-pattern>/forward2</url-pattern>
+    </servlet-mapping>
+</web-app>
