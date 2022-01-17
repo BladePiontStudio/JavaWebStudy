@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="15_FILTER" />
         <module name="05_web" />
         <module name="08_JSP" />
         <module name="13_COOKIE_SESSION" />
@@ -18,6 +19,7 @@
       <module name="08_JSP" target="1.8" />
       <module name="09_EL_JSTL" target="1.8" />
       <module name="13_COOKIE_SESSION" target="1.8" />
+      <module name="15_FILTER" target="1.8" />
       <module name="book" target="1.8" />
       <module name="demo" target="1.8" />
     </bytecodeTargetLevel>

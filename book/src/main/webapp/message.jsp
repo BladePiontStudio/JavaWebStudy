@@ -128,10 +128,10 @@
     </svg>
     <div id="js-sec-text" class="alert-sec-text">23</div>
     <div class="alert-body">
-        <div id="js-alert-head" class="alert-head">${requestScope.message}</div>
+        <div id="js-alert-head" class="alert-head">${sessionScope.message}</div>
         <div class="alert-concent">
             <p></p>
-            <a id="js-alert-btn" class="alert-btn" href="javascript:top.location.href=${requestScope.jumpUrl}">立即进入</a>
+            <a id="js-alert-btn" class="alert-btn" href="javascript:top.location.href=${sessionScope.jumpUrl}">立即进入</a>
         </div>
 
     </div>
@@ -142,7 +142,7 @@
             n = document.getElementById("js-sec-circle");
         document.getElementById("js-sec-text").innerHTML = t,
             setInterval(function () {
-                    if (0 == t) top.location.href = '${requestScope.jumpUrl}';
+                    if (0 == t) top.location.href = '${sessionScope.jumpUrl}';
                     else {
                         t -= 1,
                             document.getElementById("js-sec-text").innerHTML = t;
@@ -154,7 +154,7 @@
     }</script>
 
 
-    <script>alertSet('${requestScope.message}');</script>
+    <script>alertSet('${sessionScope.message}');</script>
     <script type="text/javascript">function clickIE4() {
         if (event.button == 2) {
             return false

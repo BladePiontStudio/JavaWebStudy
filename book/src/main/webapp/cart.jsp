@@ -41,7 +41,7 @@
             <span>购物车中一共有${sessionScope.cart.totalCount}件商品</span>
             <span>总金额：${sessionScope.cart.totalPrice}元</span>
             <span><a href="${pageContext.request.contextPath}/cart?action=clear">清空购物车</a></span>
-            <span><a href="checkout.jsp">去结账</a></span>
+            <span><a href="${pageContext.request.contextPath}/order?action=createOrder">去结账</a></span>
         </div>
     </c:if>
 </div>

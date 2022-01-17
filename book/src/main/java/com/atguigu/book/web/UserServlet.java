@@ -31,20 +31,20 @@ public class UserServlet extends BaseServlet {
             if (keep != null) {
                 Cookie cookie = new Cookie("username", username);
                 response.addCookie(cookie);
-            }else{
+            } else {
                 Cookie cookie = new Cookie("username", "");
                 response.addCookie(cookie);
             }
             //保存登陆状态
             HttpSession session = request.getSession();
-            session.setAttribute("user",user);
-            request.setAttribute("message", "登陆成功！");
-            request.setAttribute("jumpUrl", "index.jsp");
-            request.getRequestDispatcher("message.jsp").forward(request, response);
+            session.setAttribute("user", user);
+            request.getSession().setAttribute("message", "登陆成功！");
+            request.getSession().setAttribute("jumpUrl", "index.jsp");
+            response.sendRedirect(request.getContextPath() + "/message.jsp");
         } else {
-            request.setAttribute("message", "您输入的账户密码错误！");
-            request.setAttribute("jumpUrl", "login.jsp");
-            request.getRequestDispatcher("message.jsp").forward(request, response);
+            request.getSession().setAttribute("message", "您输入的账户密码错误！");
+            request.getSession().setAttribute("jumpUrl", "login.jsp");
+            response.sendRedirect(request.getContextPath() + "/message.jsp");
         }
     }
 
